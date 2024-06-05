@@ -1,3 +1,9 @@
-import "./array";
+import { Array } from "./array";
 
-console.log("this is index.js file");
+const array = new Array();
+array.push("first item");
+array.push("second item");
+array.push("third item");
+
+array.delete(1);
+console.log(array);
