@@ -4,17 +4,17 @@ const arr1 = ["a", "b", "a"];
 const arr2 = ["hello", "bye"];
 
 // solution 1 O(n^2)
-const firstSolution = (arr) => {
+export const findDuplicateItem = (arr) => {
   return arr.some((value, index, arr) => arr.indexOf(value) !== index);
 };
 
 // solution 2 O(n)
-const secondSolution = (arr) => {
+export const findDuplicateItem1 = (arr) => {
   return new Set(arr).size !== arr.length;
 };
 
 // solution 3 O(n)
-function thirdSolution(arr) {
+export const findDuplicateItem2 = (arr) => {
   var valuesSoFar = Object.create(null);
   for (var i = 0; i < arr.length; ++i) {
     var value = arr[i];
@@ -24,10 +24,10 @@ function thirdSolution(arr) {
     valuesSoFar[value] = true;
   }
   return false;
-}
+};
 
 // solution 4 O(n^2)
-function fourthSolution(arr) {
+export const findDuplicateItem3 = (arr) => {
   var valuesSoFar = [];
   for (var i = 0; i < arr.length; ++i) {
     var value = arr[i];
@@ -37,4 +37,4 @@ function fourthSolution(arr) {
     valuesSoFar.push(value);
   }
   return false;
-}
+};
