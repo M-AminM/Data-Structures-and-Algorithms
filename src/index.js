@@ -50,3 +50,5 @@ linkedList.printList();
 linkedList.insert(2, 1234);
 linkedList.insert(4, 54231);
 linkedList.remove(2);
+linkedList.reverse();
+linkedList.printList();
