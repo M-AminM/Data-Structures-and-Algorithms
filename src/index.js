@@ -1,6 +1,7 @@
 // import { Array } from "./dataStructures/array";
 
 import { LinkedList } from "./dataStructures/linkedList";
+import { Queue } from "./dataStructures/queue";
 
 // const array = new Array();
 // array.push("first item");
@@ -41,14 +42,30 @@ import { LinkedList } from "./dataStructures/linkedList";
 
 // console.log(ads(testArr));
 
-const linkedList = new LinkedList(10);
-linkedList.append(5);
-linkedList.append(18);
-linkedList.append(21);
-linkedList.prepend(-222);
-linkedList.printList();
-linkedList.insert(2, 1234);
-linkedList.insert(4, 54231);
-linkedList.remove(2);
-linkedList.reverse();
-linkedList.printList();
+// const linkedList = new LinkedList(10);
+// linkedList.append(5);
+// linkedList.append(18);
+// linkedList.append(21);
+// linkedList.prepend(-222);
+// linkedList.printList();
+// linkedList.insert(2, 1234);
+// linkedList.insert(4, 54231);
+// linkedList.remove(2);
+// linkedList.reverse();
+// linkedList.printList();
+
+// const stack = new LinkedListStack();
+// stack.push(1);
+// stack.push(2);
+// stack.push(3);
+// console.log(stack);
+// stack.pop();
+
+const queue = new Queue();
+queue.enqueue(1);
+queue.enqueue(2);
+queue.enqueue(3);
+queue.dequeue();
+queue.dequeue();
+// queue.dequeue();
+console.log(queue);
