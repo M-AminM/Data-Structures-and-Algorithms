@@ -1,5 +1,6 @@
 // import { Array } from "./dataStructures/array";
 
+import { BinarySearchTree, traverse } from "./dataStructures/binarySearchTree";
 import { LinkedList } from "./dataStructures/linkedList";
 import { Queue } from "./dataStructures/queue";
 
@@ -61,11 +62,22 @@ import { Queue } from "./dataStructures/queue";
 // console.log(stack);
 // stack.pop();
 
-const queue = new Queue();
-queue.enqueue(1);
-queue.enqueue(2);
-queue.enqueue(3);
-queue.dequeue();
-queue.dequeue();
+// const queue = new Queue();
+// queue.enqueue(1);
+// queue.enqueue(2);
+// queue.enqueue(3);
 // queue.dequeue();
-console.log(queue);
+// queue.dequeue();
+// // queue.dequeue();
+// console.log(queue);
+
+const BST = new BinarySearchTree();
+BST.insert(9);
+BST.insert(4);
+BST.insert(6);
+BST.insert(20);
+BST.insert(170);
+BST.insert(15);
+BST.insert(1);
+
+console.log(traverse(BST.root));
