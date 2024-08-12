@@ -1,4 +1,4 @@
-// import { Array } from "./dataStructures/array";
+// const arr = [3, 4, 7, 1, 2, 9, 8];
 
 import { BinarySearchTree, traverse } from "./dataStructures/binarySearchTree";
 import { LinkedList } from "./dataStructures/linkedList";
@@ -81,3 +81,22 @@ BST.insert(15);
 BST.insert(1);
 
 console.log(traverse(BST.root));
+// const findRes = (arr) => {
+//   let map = new Map();
+
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//       const sum = arr[i] + arr[j];
+//       if (!map.has(sum)) {
+//         map.set(sum, [i, j]);
+//       } else {
+//         const pp = map.get(sum);
+//         return arr[pp[0]] + " " + arr[pp[1]] + " " + arr[i] + " " + arr[j];
+//       }
+//     }
+//     console.log(map);
+//   }
+//   return undefined;
+// };
+
+// console.log(findRes(arr));
